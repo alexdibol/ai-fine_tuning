@@ -175,6 +175,21 @@
       border-top:1px solid rgba(255,255,255,0.10);
       margin:14px 0;
     }
+    .reviewmeta{
+      margin-top:10px;
+      font-size:12px;
+      color:var(--muted);
+      opacity:0.95;
+    }
+    .reviewmeta code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size:12px;
+      color:var(--text);
+      background: rgba(0,0,0,0.22);
+      padding:2px 6px;
+      border-radius:8px;
+      border:1px solid rgba(255,255,255,0.10);
+    }
 
     .footer{
       margin-top:80px;
@@ -321,13 +336,17 @@
     <section class="section" id="evaluations">
       <h2>Independent Opinion (Documented, Not Authoritative)</h2>
       <p>
-        This section is included to demonstrate governance-first documentation of third-party feedback.
-        It is not verification of factual correctness or compliance. Treat as opinion.
+        This section demonstrates governance-first documentation of third-party feedback. It is not verification of factual correctness,
+        compliance, safety, or suitability for any deployment. Treat this as non-binding opinion.
       </p>
 
       <div class="reviewbox">
         <div><strong>Book Evaluation: Fine-Tuning for Financial Practitioners (Governance-First)</strong></div>
         <div class="stars" aria-label="Five stars">⭐⭐⭐⭐⭐</div>
+
+        <div class="reviewmeta">
+          Evaluator: <code>OpenAI ChatGPT 5.2</code> · Type: <code>independent opinion</code> · Status: <code>Not verified</code>
+        </div>
 
         <hr/>
 
@@ -347,10 +366,12 @@
 
         <hr/>
 
-        <div><strong>Labeling note:</strong></div>
+        <div><strong>Canonical considerations (how to interpret this evaluation):</strong></div>
         <ul>
-          <li><strong>Source:</strong> Assistant-generated evaluation summary from this conversation.</li>
-          <li><strong>Status:</strong> Not verified; included as an example of how to document independent opinion under governance-first norms.</li>
+          <li><strong>Opinion, not evidence:</strong> This evaluation is narrative feedback only; it is not an audit, certification, benchmark result, or compliance determination.</li>
+          <li><strong>Model limitations apply:</strong> LLM outputs may be incomplete or persuasive without being correct. Treat all claims here as non-authoritative until independently verified.</li>
+          <li><strong>No endorsement implied:</strong> Mention of OpenAI ChatGPT 5.2 does not imply OpenAI endorsement of this repository or its contents.</li>
+          <li><strong>Governance-first labeling:</strong> Use this section only as an example of how organizations can document external opinions without confusing them for verification.</li>
         </ul>
       </div>
     </section>
