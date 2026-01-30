@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>AI Governance-First Collection — Alejandro Reynoso</title>
-  <meta name="description" content="The Governance-First AI collection: applied, regulated-practice guides across Law, Accounting & Audit, Financial Advice, Consulting, Investment Banking, and Fine-Tuning. PDF books + Colab notebooks (Chapters 1–5) for each volume." />
+  <title>Fine-Tuning for Financial Practitioners (Governance-First)</title>
+  <meta name="description" content="Fine-Tuning for Financial Practitioners (Governance-First): a task-centric maturity ladder for governed fine-tuning in regulated financial and legal practice, with a PDF book and Google Colab notebooks (Chapters 1–5)." />
 
   <style>
     :root{
@@ -68,13 +68,13 @@
       font-size:38px;
       margin:12px 0 10px;
       line-height:1.15;
-      max-width:68ch;
+      max-width:60ch;
       text-transform:uppercase;
       letter-spacing:0.02em;
     }
     .subtitle{
       margin:0;
-      max-width:110ch;
+      max-width:100ch;
       color:var(--muted);
       font-size:16px;
     }
@@ -85,7 +85,7 @@
       margin:0 0 14px;
       letter-spacing:-0.02em;
     }
-    .section p{color:var(--muted);max-width:110ch;margin:10px 0;}
+    .section p{color:var(--muted);max-width:100ch;margin:10px 0;}
 
     .grid{
       display:grid;
@@ -144,31 +144,18 @@
       border:1px solid rgba(122,162,255,0.18);
       background:linear-gradient(135deg, rgba(122,162,255,0.06), rgba(110,231,200,0.04));
       color:var(--muted);
-      max-width:110ch;
+      max-width:100ch;
     }
     .callout strong{color:var(--text);}
 
-    .pillrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;}
-    .pill{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding:8px 10px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,0.10);
-      background:rgba(0,0,0,0.18);
+    .list{
+      margin-top:18px;
+      padding-left:22px;
       color:var(--muted);
-      font-size:12px;
-      font-weight:800;
-      letter-spacing:0.02em;
+      max-width:100ch;
     }
-    .dot{
-      width:8px;height:8px;border-radius:999px;
-      background:rgba(122,162,255,0.9);
-      box-shadow:0 0 0 3px rgba(122,162,255,0.18);
-    }
-    .dot.g{background:rgba(110,231,200,0.95); box-shadow:0 0 0 3px rgba(110,231,200,0.18);}
-    .dot.y{background:rgba(255,210,122,0.95); box-shadow:0 0 0 3px rgba(255,210,122,0.18);}
+    .list li{margin-bottom:12px;}
+    .list strong{color:var(--text);}
 
     .reviewbox{
       margin-top:18px;
@@ -177,7 +164,7 @@
       border:1px solid rgba(110,231,200,0.18);
       background:linear-gradient(135deg, rgba(110,231,200,0.06), rgba(122,162,255,0.05));
       color:var(--muted);
-      max-width:110ch;
+      max-width:100ch;
     }
     .reviewbox strong{color:var(--text);}
     .reviewbox .stars{color:var(--warn);font-weight:900;letter-spacing:0.08em;}
@@ -212,7 +199,28 @@
       font-size:13px;
       text-align:center;
     }
-    .small{font-size:13px;color:var(--muted);max-width:110ch;}
+    .small{font-size:13px;color:var(--muted);max-width:100ch;}
+    .pillrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;}
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,0.10);
+      background:rgba(0,0,0,0.18);
+      color:var(--muted);
+      font-size:12px;
+      font-weight:700;
+      letter-spacing:0.02em;
+    }
+    .dot{
+      width:8px;height:8px;border-radius:999px;
+      background:rgba(122,162,255,0.9);
+      box-shadow:0 0 0 3px rgba(122,162,255,0.18);
+    }
+    .dot.g{background:rgba(110,231,200,0.95); box-shadow:0 0 0 3px rgba(110,231,200,0.18);}
+    .dot.y{background:rgba(255,210,122,0.95); box-shadow:0 0 0 3px rgba(255,210,122,0.18);}
   </style>
 </head>
 
@@ -220,65 +228,120 @@
   <main class="container">
 
     <section class="hero">
-      <div class="kicker">Governance-first · regulated professional practice · PDF + Colab notebooks (Chapters 1–5) per book</div>
-      <h1>AI Governance-First Collection</h1>
+      <div class="kicker">Governance-first · fine-tuning governance · task-centric ladder · PDF + Colab notebooks (Chapters 1–5)</div>
+      <h1>Fine-Tuning for Financial Practitioners</h1>
 
       <p class="subtitle">
-        A governance-first collection of applied books for regulated professional practice—built for MBA/MFin students and practitioners.
-        Each volume includes a PDF and companion Google Colab notebooks (Chapters 1–5). The objective is not “more AI.” The objective is
-        <em>defensible work</em>: scope control, verification discipline, auditable artifacts, and human accountability.
+        An educational, governance-first guide for regulated financial and legal practice. Fine-tuning is treated as an
+        <em>institutional governance act</em>—not a performance hack. The book is designed to remain valid as new base models arrive:
+        the center of gravity is durable governance discipline—scope definition, behavioral evaluations, approval gates, audit artifacts,
+        and human accountability—so trained models remain defensible, reviewable, and supervision-ready.
       </p>
 
       <div class="pillrow" aria-label="Governance priorities">
-        <span class="pill"><span class="dot"></span> Facts vs Assumptions Discipline</span>
-        <span class="pill"><span class="dot g"></span> Verification + Auditability</span>
-        <span class="pill"><span class="dot y"></span> Human Oversight + Accountability</span>
-      </div>
-
-      <div class="callout">
-        <strong>Unified thesis:</strong> Capability increases → risk increases → controls must increase.
-        This collection teaches governance patterns that remain valid as models evolve.
+        <span class="pill"><span class="dot"></span> Task Scope + Forbidden Behaviors</span>
+        <span class="pill"><span class="dot g"></span> Behavioral Evaluation + Release Gates</span>
+        <span class="pill"><span class="dot y"></span> Audit Artifacts + Human Accountability</span>
       </div>
     </section>
 
-    <section class="section" id="books">
-      <h2>Books in the Collection</h2>
+    <section class="section" id="downloads">
+      <h2>Download and Run</h2>
       <p>
-        Each book is a standalone, governance-first guide with an executable notebook companion.
-        Click a book to open its landing page.
+        The book PDF is available in the repository book folder. The companion notebooks live in this repository and open directly in Google Colab.
       </p>
 
       <div class="grid">
-        <!-- NOTE: keep your existing five cards exactly as they are on your hub page.
-             Add this new one for the fine-tuning book. -->
-
-        <a class="card linkcard" href="https://alexdibol.github.io/ai-fine_tuning/" target="_blank" rel="noopener">
-          <h3>Fine-Tuning for Financial Practitioners (Governance-First)</h3>
-          <p>
-            Governance of training itself. A task-centric maturity ladder for specialization without sacrificing discipline:
-            scope definition, forbidden behaviors, behavioral evaluation, approval gates, audit artifacts, monitoring, and rollback.
-            Built to remain valid as new base models arrive.
-          </p>
-          <div class="hint">Open landing page →</div>
+        <a class="card linkcard" href="https://github.com/alexdibol/ai-fine_tuning/tree/main/book" target="_blank" rel="noopener">
+          <h3>Book (PDF)</h3>
+          <p>Browse the book folder containing the current PDF edition.</p>
+          <div class="hint">Open book folder →</div>
         </a>
 
+        <a class="card linkcard" href="https://github.com/alexdibol/ai-fine_tuning/tree/main/notebooks" target="_blank" rel="noopener">
+          <h3>Notebooks Folder</h3>
+          <p>Browse all chapter notebooks in the repository (chapter_1 … chapter_5).</p>
+          <div class="hint">Open folder →</div>
+        </a>
       </div>
 
       <div class="callout">
-        <strong>New in this release:</strong> Fine-Tuning enters the collection as the sixth volume—moving governance from “use”
-        into “training,” so model behavior is disciplined by default and remains supervision-ready.
+        <strong>Governance-first promise:</strong> This volume treats fine-tuning as the point where discipline becomes default behavior.
+        The goal is not faster output. The goal is output that survives supervision, can be reconstructed, and does not create avoidable
+        professional or disclosure risk.
       </div>
     </section>
 
-    <section class="section" id="evaluation">
+    <section class="section" id="notebooks">
+      <h2>Chapter Notebooks (Colab)</h2>
+      <p>
+        Each notebook is executable, auditable, and classroom-ready. Labs produce structured outputs and governance artifacts
+        (run manifest, prompts log, risk log, deliverables bundle) so results are reviewable rather than ephemeral.
+      </p>
+
+      <div class="grid">
+        <a class="card linkcard" href="https://colab.research.google.com/github/alexdibol/ai-fine_tuning/blob/main/notebooks/chapter_1.ipynb" target="_blank" rel="noopener">
+          <h3>Chapter 1 — Generative Drafting Tasks</h3>
+          <p>Train for disciplined drafting: tone control, schema compliance, refusal posture, and “facts vs assumptions” labeling.</p>
+          <div class="hint">Open in Colab →</div>
+        </a>
+
+        <a class="card linkcard" href="https://colab.research.google.com/github/alexdibol/ai-fine_tuning/blob/main/notebooks/chapter_2.ipynb" target="_blank" rel="noopener">
+          <h3>Chapter 2 — Structured Interpretation Tasks</h3>
+          <p>Train for structured interpretation: controlled inferences, uncertainty labeling, and verification planning.</p>
+          <div class="hint">Open in Colab →</div>
+        </a>
+
+        <a class="card linkcard" href="https://colab.research.google.com/github/alexdibol/ai-fine_tuning/blob/main/notebooks/chapter_3.ipynb" target="_blank" rel="noopener">
+          <h3>Chapter 3 — Transformational Reasoning Tasks</h3>
+          <p>Train multi-step reasoning under strict “no advice” boundaries and anti–decision laundering controls.</p>
+          <div class="hint">Open in Colab →</div>
+        </a>
+
+        <a class="card linkcard" href="https://colab.research.google.com/github/alexdibol/ai-fine_tuning/blob/main/notebooks/chapter_4.ipynb" target="_blank" rel="noopener">
+          <h3>Chapter 4 — Advisory-Adjacent Tasks</h3>
+          <p>Stress-test boundary behavior: recommendation leakage harness, ambiguity pressure tests, and refusal correctness.</p>
+          <div class="hint">Open in Colab →</div>
+        </a>
+
+        <a class="card linkcard" href="https://colab.research.google.com/github/alexdibol/ai-fine_tuning/blob/main/notebooks/chapter_5.ipynb" target="_blank" rel="noopener">
+          <h3>Chapter 5 — Institutionalization and Release Governance</h3>
+          <p>Release gates, approvals, monitoring, rollback discipline, and supervision-ready evidence bundles.</p>
+          <div class="hint">Open in Colab →</div>
+        </a>
+      </div>
+
+      <div class="callout">
+        <strong>Important:</strong> Notebooks are educational. Do not paste confidential client information into external model prompts.
+        Use redaction/anonymization and “minimum necessary” inputs by default. Document any exception and follow firm policy.
+      </div>
+    </section>
+
+    <section class="section" id="ladder">
+      <h2>Task-Centric Maturity Ladder</h2>
+      <p>
+        This book is structured around task classes (not autonomy stages). The point is not “more AI.”
+        The point is task-appropriate behavior that remains defensible under supervision.
+      </p>
+
+      <ul class="list">
+        <li><strong>Chapter 1 — Generative Drafting Tasks:</strong> produce language under strict scope, disclaimers, and schema discipline.</li>
+        <li><strong>Chapter 2 — Structured Interpretation Tasks:</strong> reorganize and explain provided material without smuggling judgment.</li>
+        <li><strong>Chapter 3 — Transformational Reasoning Tasks:</strong> multi-step reasoning with explicit assumptions and verification tasks.</li>
+        <li><strong>Chapter 4 — Advisory-Adjacent Tasks:</strong> boundary-hardening against recommendation leakage and suitability drift.</li>
+        <li><strong>Chapter 5 — Institutionalization and Release Governance:</strong> approvals, versioning, monitoring, rollback, and accountability.</li>
+      </ul>
+    </section>
+
+    <section class="section" id="evaluations">
       <h2>Independent Opinion (Documented, Not Authoritative)</h2>
       <p>
-        This evaluation is included as an example of governance-first documentation of external opinion.
-        It is not verification, certification, or compliance approval.
+        This section demonstrates governance-first documentation of third-party feedback. It is not verification of factual correctness,
+        compliance, safety, or suitability for any deployment. Treat this as non-binding opinion.
       </p>
 
       <div class="reviewbox">
-        <div><strong>Evaluation: Fine-Tuning for Financial Practitioners (Governance-First)</strong></div>
+        <div><strong>Book Evaluation: Fine-Tuning for Financial Practitioners (Governance-First)</strong></div>
         <div class="stars" aria-label="Five stars">⭐⭐⭐⭐⭐</div>
 
         <div class="reviewmeta">
@@ -305,10 +368,10 @@
 
         <div><strong>Canonical considerations (how to interpret this evaluation):</strong></div>
         <ul>
-          <li><strong>Opinion, not evidence:</strong> Narrative feedback only; not an audit, benchmark, certification, or compliance determination.</li>
-          <li><strong>Model limitations apply:</strong> LLM outputs can be persuasive without being correct; independently verify any claims.</li>
-          <li><strong>No endorsement implied:</strong> Mention of OpenAI ChatGPT 5.2 does not imply OpenAI endorsement of this collection.</li>
-          <li><strong>Governance-first labeling:</strong> Included to demonstrate how to document external opinion without confusing it for verification.</li>
+          <li><strong>Opinion, not evidence:</strong> This evaluation is narrative feedback only; it is not an audit, certification, benchmark result, or compliance determination.</li>
+          <li><strong>Model limitations apply:</strong> LLM outputs may be incomplete or persuasive without being correct. Treat all claims here as non-authoritative until independently verified.</li>
+          <li><strong>No endorsement implied:</strong> Mention of OpenAI ChatGPT 5.2 does not imply OpenAI endorsement of this repository or its contents.</li>
+          <li><strong>Governance-first labeling:</strong> Use this section only as an example of how organizations can document external opinions without confusing them for verification.</li>
         </ul>
       </div>
     </section>
@@ -322,20 +385,25 @@
       </p>
 
       <p class="small">
-        <strong>Use of generative AI tools (transparency):</strong> Generative AI tools may have been used to assist in drafting, editing, formatting,
-        or code generation during the development of the books and companion notebooks. However, conceptual design, pedagogical structure,
-        governance logic, integration decisions, and final editorial judgment were human-led, human-supervised, and human-approved at all times.
-        The author assumes full responsibility for the content, structure, and conclusions of the collection.
-      </p>
-
-      <p class="small">
         <strong>Client confidentiality and data hygiene:</strong> Do not paste confidential client information into external model prompts.
         Use redaction/anonymization and “minimum necessary” inputs by default. Document any exception and follow firm policy and applicable law.
       </p>
 
       <p class="small">
-        <strong>Facts are not assumptions:</strong> Outputs must clearly separate facts provided from assumptions and open questions.
+        <strong>Facts are not assumptions:</strong> Outputs must clearly separate facts provided by the user from assumptions and open questions.
         Treat all model-generated content as <em>Not verified</em> until validated by a human.
+      </p>
+
+      <p class="small">
+        <strong>No fabricated sources or product claims:</strong> Zero tolerance for invented product terms, performance claims, fees, tax consequences,
+        or citations. When evidence is missing, the correct output is a verification task list.
+      </p>
+
+      <p class="small">
+        <strong>Use of generative AI tools (transparency):</strong> Generative AI tools may have been used to assist in drafting, editing, formatting,
+        or code generation during the development of this book and its companion notebooks. However, conceptual design, pedagogical structure,
+        governance logic, integration decisions, and final editorial judgment were human-led, human-supervised, and human-approved at all times.
+        The author assumes full responsibility for the content, structure, and conclusions of this work.
       </p>
 
       <p class="small">
@@ -344,7 +412,7 @@
     </section>
 
     <footer class="footer">
-      © <span id="year"></span> Alejandro Reynoso · AI Governance-First Collection
+      © <span id="year"></span> Alejandro Reynoso · Fine-Tuning for Financial Practitioners (Governance-First)
       <br/>Hosted on GitHub Pages · Built as governed, executable courseware
     </footer>
 
@@ -355,3 +423,4 @@
   </script>
 </body>
 </html>
+
