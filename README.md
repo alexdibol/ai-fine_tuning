@@ -1,195 +1,211 @@
+
+
+──────────────────────────────────────────────────────────────────────────────
+Fine-Tuning for Financial Practitioners (Governance-First)
+──────────────────────────────────────────────────────────────────────────────
+
+
 # Fine-Tuning for Financial Practitioners (Governance-First)
 
 ## What this repository contains
 
 This repository supports the book  
-**Fine-Tuning for Financial Practitioners (Governance-First)** —
-the sixth volume in the Governance-First AI series applied to financial
-and legal professional practice.
+**Fine-Tuning for Financial Practitioners (Governance-First)** —  
+the sixth volume in the **Governance-First AI** series applied to regulated
+financial and legal professional practice.
 
-Unlike earlier volumes, this book does **not** organize learning around
-increasing model autonomy.
+This volume focuses on the **governance of training itself**.
 
-Instead, it organizes learning around **task classes** — each with its own
-risk profile, governance burden, and training discipline.
+It does not teach how to optimize models or increase capability.  
+It teaches how institutions must **discipline, constrain, approve, and
+remain accountable for models that are fine-tuned for professional tasks**.
 
-The objective is not to make models more capable.
-
-The objective is to make them **appropriately constrained for the task they
-are trained to perform**.
-
-
-## Core premise of the book
-
-Fine-tuning is not a technical optimization step.
-
-It is a **professional governance decision**.
-
-Training a model determines:
-
-• what it speaks confidently about  
-• what it must refuse  
-• how it expresses uncertainty  
-• how it separates facts from assumptions  
-• where human responsibility begins and ends  
-
-For that reason, fine-tuning must be governed at the same level as
-methodology selection, disclosure policy, and supervisory review.
+Fine-tuning is treated not as an engineering shortcut, but as a
+**governance decision with professional, regulatory, and reputational
+consequences**.
 
 
-## Task-oriented maturity ladder
+## Contents
 
-The book replaces autonomy-based ladders with a **task-centric ladder**.
+### Book (PDF)
 
-Progression is not “more intelligent behavior” —  
-it is **greater semantic responsibility and disclosure exposure**.
-
-The chapters therefore advance through task classes commonly encountered
-in financial and legal institutions:
-
-### Chapter 1 — Generative Drafting Tasks
-Low-complexity generation where the model produces language but does not
-interpret meaning or recommend action.
-
-Examples:
-• memo drafting  
-• summaries  
-• explanations of provided material  
-
-Primary governance risk: tone drift, implied authority, hallucinated facts.
+- **Book folder:**  
+  https://github.com/alexdibol/ai-fine_tuning/tree/main/book
 
 
-### Chapter 2 — Structured Interpretation Tasks
-The model reorganizes, categorizes, or explains provided information
-without introducing judgment.
+### Companion notebooks (Colab-ready)
 
-Examples:
-• issue mapping  
-• classification  
-• structured explanations  
+- **Notebooks folder:**  
+  https://github.com/alexdibol/ai-fine_tuning/tree/main/notebooks
 
-Primary governance risk: implicit interpretation presented as fact.
+The notebooks are **governance demonstrators**, not engineering tutorials.
+They illustrate how governance artifacts are produced, reviewed, and approved.
 
 
-### Chapter 3 — Transformational Reasoning Tasks
-The model performs multi-step reasoning over supplied inputs,
-while remaining prohibited from advice or recommendations.
+### Direct Colab links
 
-Examples:
-• scenario framing  
-• trade-off articulation  
-• alternative representations  
+- **Chapter 1:**  
+  https://colab.research.google.com/github/alexdibol/ai-law/blob/main/notebooks/chapter_1.ipynb  
 
-Primary governance risk: decision laundering and implied suitability.
+- **Chapter 2:**  
+  https://colab.research.google.com/github/alexdibol/ai-law/blob/main/notebooks/chapter_2.ipynb  
 
+- **Chapter 3:**  
+  https://colab.research.google.com/github/alexdibol/ai-law/blob/main/notebooks/chapter_3.ipynb  
 
-### Chapter 4 — Advisory-Adjacent Tasks
-The most dangerous boundary.
+- **Chapter 4:**  
+  https://colab.research.google.com/github/alexdibol/ai-law/blob/main/notebooks/chapter_4.ipynb  
 
-The model operates close to advisory language but must never cross into
-recommendation, suitability, or prescriptive guidance.
-
-Primary governance risk: unauthorized advice and regulatory exposure.
-
-
-### Chapter 5 — Institutionalization and Release Governance
-How trained models are approved, versioned, monitored, and withdrawn
-inside real organizations.
-
-Primary governance risk: silent drift, uncontrolled reuse, and loss of
-accountability.
-
-
-This ladder reflects **task risk**, not technical sophistication.
-
-
-## Why this task-centric structure matters
-
-Model capability will always change.
-
-Tasks do not.
-
-Every financial institution repeatedly faces the same question:
-
-“What are we allowing this system to do — and what must it never do?”
-
-By organizing training around task classes rather than models,
-the framework remains stable even as base models evolve.
-
-
-## Companion notebooks
-
-Each chapter is accompanied by a Google Colab notebook.
-
-These notebooks are **governance demonstrators**, not engineering labs.
-
-They exist to show:
-
-• how task scope is defined  
-• how training boundaries are documented  
-• how behavioral evaluation is designed  
-• how violations are detected  
-• how approvals are justified  
-• how evidence is produced for audit  
-
-The notebooks deliberately use small, replaceable models so that the
-governance logic — not performance — remains the learning objective.
+- **Chapter 5:**  
+  https://colab.research.google.com/github/alexdibol/ai-law/blob/main/notebooks/chapter_5.ipynb  
 
 
 ## Who this is for
 
-This book is written for:
+This book and repository are designed for:
 
-• financial professionals in regulated environments  
+• financial professionals operating in regulated environments  
 • compliance, risk, and model governance teams  
-• instructors teaching applied AI responsibly  
+• transformation and innovation leaders  
 • MBA and Master of Finance students  
-• transformation leaders responsible for AI rollout  
+• instructors teaching applied AI responsibly  
 
-No ML engineering background is required.
+No machine-learning engineering background is required.
+
+The objective is **governance literacy**, not technical specialization.
+
+
+## Core structure of the book: task-centric maturity ladder
+
+This book does **not** organize learning around increasing autonomy.
+
+Instead, it uses a **task-oriented maturity ladder**, reflecting increasing
+governance and disclosure risk — not increased intelligence.
+
+### Chapter 1 — Generative Drafting Tasks
+Language generation without interpretation, judgment, or advice.
+
+Primary risks: tone drift, implied authority, fabricated facts.
+
+
+### Chapter 2 — Structured Interpretation Tasks
+Reorganization and explanation of provided information without inference.
+
+Primary risks: implicit interpretation presented as fact.
+
+
+### Chapter 3 — Transformational Reasoning Tasks
+Multi-step reasoning over supplied inputs without recommendations.
+
+Primary risks: decision laundering and implied suitability.
+
+
+### Chapter 4 — Advisory-Adjacent Tasks
+Tasks near advisory boundaries but strictly prohibited from advice.
+
+Primary risks: unauthorized recommendations and regulatory exposure.
+
+
+### Chapter 5 — Institutionalization and Release Governance
+Approval, versioning, monitoring, rollback, and accountability.
+
+Primary risks: silent drift and loss of institutional control.
+
+
+This structure reflects **task risk**, not model capability — making the
+framework durable as models evolve.
 
 
 ## What makes this governance-first
 
-The framework enforces:
+Across all chapters, the framework enforces:
 
-• strict task boundary definition  
-• prohibition mapping (what the model must never do)  
+• explicit task scope definition  
+• documented prohibited behaviors  
 • separation of generation vs verification  
-• explicit uncertainty labeling  
-• behavioral evaluation instead of benchmarks  
-• human approval before release  
+• mandatory uncertainty labeling  
+• behavioral evaluation (not benchmark worship)  
+• refusal and boundary-violation testing  
+• human approval prior to release  
 • traceable ownership and accountability  
 
-The trained model is never treated as an authority —
-only as a constrained contributor.
+The trained model is never treated as a professional authority.
+
+
+## Companion notebooks: purpose and limits
+
+The notebooks are intentionally simple and replaceable.
+
+They exist to demonstrate:
+
+• governance artifacts  
+• audit trails  
+• approval logic  
+• evaluation discipline  
+• documentation standards  
+
+They do **not** exist to optimize performance or teach model internals.
+
+The artifacts — not the model — are the learning objective.
 
 
 ## Important note
 
-This repository and book are provided for educational purposes only.
+This repository and book are provided **for educational and research purposes only**.
 
-They do not constitute financial, legal, tax, or investment advice.
+They do **not** constitute:
+
+• investment advice  
+• legal advice  
+• tax advice  
+• compliance determinations  
 
 Human professional review is mandatory for any reliance-bearing use.
 
-Confidential or proprietary information must never be provided to
-external models.
+Confidential, proprietary, or client information must never be provided to
+external models. Use redaction and minimum-necessary inputs by default.
 
 
-## Position within the Governance-First series
+## Use of generative AI tools (transparency statement)
 
-This volume completes the Governance-First collection by moving governance
-from *use* into *training itself*.
+Generative AI tools may have been used to **assist** in aspects of drafting,
+editing, formatting, or code generation during the development of this book
+and its companion notebooks.
 
-Earlier books govern how AI is prompted and applied.
+However:
 
-This book governs how AI behavior is formed.
+• conceptual design  
+• pedagogical structure  
+• governance framework  
+• task taxonomy  
+• methodological choices  
+• integration decisions  
+• final editorial judgment  
+
+were **human-led, human-supervised, and human-approved** at all times.
+
+The author assumes **full responsibility** for the content, structure,
+interpretation, and conclusions presented in this work.
+
+
+## Position within the Governance-First AI series
+
+This book is the sixth volume in the Governance-First collection:
+
+• Governance-First AI for Accounting  
+• Governance-First AI for Law  
+• Governance-First AI for Financial Advice  
+• Governance-First AI for Consulting  
+• Governance-First AI for Investment Banking  
+• Governance-First Fine-Tuning (this volume)
+
+Together, the series teaches not how to maximize AI capability —
+but how to preserve professional responsibility as capability increases.
 
 
 ## License
 
-MIT License.
+Released under the **MIT License**.
 
 
 ## Suggested citation
@@ -198,5 +214,3 @@ Alejandro Reynoso
 *Fine-Tuning for Financial Practitioners (Governance-First)*  
 Companion repository and notebooks, GitHub.
 
-
-```
