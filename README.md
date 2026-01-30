@@ -1,10 +1,5 @@
 
 
-──────────────────────────────────────────────────────────────────────────────
-Fine-Tuning for Financial Practitioners (Governance-First)
-──────────────────────────────────────────────────────────────────────────────
-
-
 # Fine-Tuning for Financial Practitioners (Governance-First)
 
 ## What this repository contains
